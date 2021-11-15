@@ -1,0 +1,50 @@
+2021-10-20 12:07:09
+ahkab v. 0.18 (c) 2006-2015 Giuseppe Venturini
+
+Operating Point (OP) analysis
+
+Netlist: ./tran_ie.ckt
+Title: rc time delay circuit
+At 300.00 K
+Options:
+	vea = 1.000000e-09
+	ver = 0.001000
+	iea = 1.000000e-09
+	ier = 0.001000
+	gmin = 0.000000e+00
+
+Convergence reached in 2 iterations.
+
+========
+RESULTS:
+========
+
+Variable    Units      Value    Error    %
+----------  -------  -------  -------  ---
+V1          V              0        0    0
+V2          V              0        0    0
+I(V1)       A              0        0    0
+I(L1)       A              0        0    0
+
+========================
+ELEMENTS OP INFORMATION:
+========================
+
+Part ID      V(n1-n2) [V]    Q [C]    E [J]
+---------  --------------  -------  -------
+C1                      0        0        0
+
+Part ID      ϕ(n1,n2) [Wb]    I(n1->n2) [A]    E [J]
+---------  ---------------  ---------------  -------
+L1                       0                0        0
+
+Part ID      R [Ω]    V(n1,n2) [V]    I(n1->n2) [A]    P [W]
+---------  -------  --------------  ---------------  -------
+R1             300               0                0        0
+
+Part ID      V(n1,n2) [V]    I(n1->n2) [A]    P [W]
+---------  --------------  ---------------  -------
+V1                      0                0        0
+
+Total power dissipation: 0 W
+

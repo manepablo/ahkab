@@ -146,6 +146,11 @@ All methods in alphabetical order
 from __future__ import (unicode_literals, absolute_import,
                         division, print_function)
 
+import sys, os
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.dirname(SCRIPT_DIR)+"/ahkab/ahkab")
+
+
 import atexit
 import copy
 import os
@@ -165,7 +170,7 @@ except ImportError:
     plotting_available = False
 
 # analyses
-from . import dc_analysis
+from dc_analysis import *
 from . import transient
 from . import ac
 from . import pss
